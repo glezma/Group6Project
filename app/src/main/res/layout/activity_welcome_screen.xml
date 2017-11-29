@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.glezma.group6project.WelcomeScreen">
+
+    <Button
+        android:id="@+id/buttonGame1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game 1: 9/9 Cincinnati"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGame2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+
+    <Button
+        android:id="@+id/buttonGame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game 2: 9/16 Air Force"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGame3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGame1" />
+
+    <Button
+        android:id="@+id/buttonGame3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game 3: 10/7 Michigan State"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGame4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGame2" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Michigan Ticket Exchange"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGame1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGame4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game 4: 10/28 Rutgers"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGame5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGame3" />
+
+    <Button
+        android:id="@+id/buttonGame5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game 5: 11/4 Minnesota"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGame6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGame4" />
+
+    <Button
+        android:id="@+id/buttonGame6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game 6: 11/25 Ohio State"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGame5" />
+</android.support.constraint.ConstraintLayout>
