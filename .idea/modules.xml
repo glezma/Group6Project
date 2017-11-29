@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TO626Group6Project.iml" filepath="$PROJECT_DIR$/TO626Group6Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Group6Project.iml" filepath="$PROJECT_DIR$/Group6Project.iml" />
+      <module fileurl="file://C:\Users\infability\AndroidStudioProjects\Group6Project\Group6Project.iml" filepath="C:\Users\infability\AndroidStudioProjects\Group6Project\Group6Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\infability\AndroidStudioProjects\Group6Project\app\app.iml" filepath="C:\Users\infability\AndroidStudioProjects\Group6Project\app\app.iml" />
     </modules>
   </component>
 </project>
