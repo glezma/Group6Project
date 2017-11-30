@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public class ActivityBuySellInfo extends Activity {
 
-    private int a;
+    private int a1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
