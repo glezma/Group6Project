@@ -49,28 +49,28 @@ public class WelcomeScreen extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.buttonGame1) {
-            Intent intentGame1 = new Intent(this, Game1.class);
+            Intent intentGame1 = new Intent(this, MainActivity.class);
             this.startActivity(intentGame1);
         }
         else if (view.getId() == R.id.buttonGame2) {
-            Intent intentGame2 = new Intent(this, Game2.class);
-            this.startActivity(intentGame2);
+         //   Intent intentGame2 = new Intent(this, Game2.class);
+          //  this.startActivity(intentGame2);
         }
         else if (view.getId() == R.id.buttonGame3) {
-            Intent intentGame3 = new Intent(this, Game1.class);
-            this.startActivity(intentGame3);
+         //   Intent intentGame3 = new Intent(this, Game1.class);
+        //    this.startActivity(intentGame3);
         }
         else if (view.getId() == R.id.buttonGame4) {
-            Intent intentGame4 = new Intent(this, Game2.class);
-            this.startActivity(intentGame4);
+         //   Intent intentGame4 = new Intent(this, Game2.class);
+          //  this.startActivity(intentGame4);
         }
         else if (view.getId() == R.id.buttonGame5) {
-            Intent intentGame5 = new Intent(this, Game1.class);
-            this.startActivity(intentGame5);
+          //  Intent intentGame5 = new Intent(this, Game1.class);
+         //   this.startActivity(intentGame5);
         }
         else if (view.getId() == R.id.buttonGame6) {
-            Intent intentGame6 = new Intent(this, Game2.class);
-            this.startActivity(intentGame6);
+         //   Intent intentGame6 = new Intent(this, Game2.class);
+          //  this.startActivity(intentGame6);
         }
     }
 
@@ -85,14 +85,14 @@ public class WelcomeScreen extends Activity implements View.OnClickListener {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menuItemHome){
-            Intent intentHome = new Intent(this, WelcomeScreen.class);
-            this.startActivity(intentHome);
+         //   Intent intentHome = new Intent(this, WelcomeScreen.class);
+          //  this.startActivity(intentHome);
         } else if (item.getItemId() == R.id.menuItemMyTickets) {
-            Intent intentMyTickets = new Intent(this, MyTickets.class);
-            this.startActivity(intentMyTickets);
+         //   Intent intentMyTickets = new Intent(this, MyTickets.class);
+          //  this.startActivity(intentMyTickets);
         } else if (item.getItemId() == R.id.menuItemLogOut) {
-            Intent intentLogOut = new Intent(this, LogOut.class);
-            this.startActivity(intentLogOut);
+          //  Intent intentLogOut = new Intent(this, LogOut.class);
+           // this.startActivity(intentLogOut);
         }
 
         return super.onOptionsItemSelected(item);

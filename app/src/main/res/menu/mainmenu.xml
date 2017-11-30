@@ -9,5 +9,7 @@
         android:title="My Tickets" />
     <item
         android:id="@+id/menuItemLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:title="Log Out" />
 </menu>
