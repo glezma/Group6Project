@@ -6,4 +6,94 @@
     android:layout_height="match_parent"
     tools:context="com.example.glezma.group6project.ActivityBuySellInfo">
 
+    <Button
+        android:id="@+id/buttonBuy"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSell"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBuy" />
+
+    <Button
+        android:id="@+id/buttonSell"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Sell"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonBuy"
+        app:layout_constraintTop_toBottomOf="@+id/listViewSell"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ListView
+        android:id="@+id/listViewBuy"
+        android:layout_width="187dp"
+        android:layout_height="334dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuy"
+        app:layout_constraintEnd_toStartOf="@+id/listViewSell"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBuy" />
+
+    <ListView
+        android:id="@+id/listViewSell"
+        android:layout_width="183dp"
+        android:layout_height="334dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/listViewBuy"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSell" />
+
+    <TextView
+        android:id="@+id/textViewBuy"
+        android:layout_width="105dp"
+        android:layout_height="39dp"
+        android:text="Buy"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/listViewBuy"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSell"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGameName" />
+
+    <TextView
+        android:id="@+id/textViewSell"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:text="Sell"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/listViewSell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewBuy"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGameName" />
+
+    <TextView
+        android:id="@+id/textViewGameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UMich vs Ohio State"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBuy"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGameDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGameDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25 Nov'17"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewGameName"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

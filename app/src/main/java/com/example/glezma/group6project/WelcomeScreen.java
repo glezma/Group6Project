@@ -49,8 +49,14 @@ public class WelcomeScreen extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.buttonGame1) {
-            Intent intentGame1 = new Intent(this, MainActivity.class);
-            this.startActivity(intentGame1);
+
+            // Below statements commented by Avneesh to test buy sell ticket page
+            // Intent intentGame1 = new Intent(this, MainActivity.class);
+            // this.startActivity(intentGame1);
+
+            // Below statements written by Avneesh to test buy sell ticket page
+            Intent intentBuySellActivity = new Intent(this, ActivityBuySellInfo.class);
+            this.startActivity(intentBuySellActivity);
         }
         else if (view.getId() == R.id.buttonGame2) {
          //   Intent intentGame2 = new Intent(this, Game2.class);

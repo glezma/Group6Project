@@ -24,7 +24,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         if (v.getId() == R.id.buttonWelcomeScreen) {
             Intent intentWelcome = new Intent(this, WelcomeScreen.class);
-                this.startActivity(intentWelcome);
+            this.startActivity(intentWelcome);
         }
 
     }
