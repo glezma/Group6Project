@@ -6,14 +6,76 @@
     android:layout_height="match_parent"
     tools:context="com.example.glezma.group6project.MainActivity">
 
-    <Button
-        android:id="@+id/buttonWelcomeScreen"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome Screen"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="20dp"
+        android:text="Dummy Activity"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWelcomeScreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWelcomeScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Check Welcome Screen"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBullSellInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/buttonBullSellInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Buy Sell Info"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAccoverview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWelcomeScreen"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/buttonAccoverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Account"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuyLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBullSellInfo" />
+
+    <Button
+        android:id="@+id/buttonBuyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Buy Layout "
+        app:layout_constraintBottom_toTopOf="@+id/buttonGameListing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAccoverview" />
+
+    <Button
+        android:id="@+id/buttonGameListing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Check Game Listing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBuyLayout" />
+
 </android.support.constraint.ConstraintLayout>

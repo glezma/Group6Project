@@ -9,6 +9,10 @@ import android.widget.Button;
 public class MainActivity extends Activity implements View.OnClickListener {
 
     private Button buttonWelcomeScreen;
+    private Button buttonBullSellInfo;
+    private Button buttonAccoverview;
+    private Button buttonBuyLayout;
+    private Button buttonGameListing;
 
 
     @Override
@@ -18,6 +22,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         buttonWelcomeScreen = (Button) findViewById(R.id.buttonWelcomeScreen);
         buttonWelcomeScreen.setOnClickListener(this);
+
+        buttonBullSellInfo = (Button) findViewById(R.id.buttonBullSellInfo);
+        buttonBullSellInfo.setOnClickListener(this);
+
+        buttonAccoverview = (Button) findViewById(R.id.buttonAccoverview);
+        buttonAccoverview.setOnClickListener(this);
+
+        buttonBuyLayout = (Button) findViewById(R.id.buttonBuyLayout);
+        buttonBuyLayout.setOnClickListener(this);
+
+        buttonGameListing = (Button) findViewById(R.id.buttonGameListing);
+        buttonGameListing.setOnClickListener(this);
+
     }
 
     @Override
@@ -25,6 +42,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         if (v.getId() == R.id.buttonWelcomeScreen) {
             Intent intentWelcome = new Intent(this, WelcomeScreen.class);
             this.startActivity(intentWelcome);
+        } else if (v.getId() == R.id.buttonBullSellInfo) {
+            Intent intentBuySellInfo = new Intent(this, ActivityBuySellInfo.class);
+            this.startActivity(intentBuySellInfo);
+        } else if (v.getId() == R.id.buttonAccoverview) {
+            Intent intentAccountOverview = new Intent(this, AccOverview.class);
+            this.startActivity(intentAccountOverview);
         }
 
     }
