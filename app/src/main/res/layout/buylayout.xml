@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewBuyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="39dp"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewBuyPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewBuyNumber"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/textViewBuyNumber"
+        android:layout_toRightOf="@+id/textViewBuyNumber"
+        android:text="TextView"
+        android:textSize="18sp" />
+</RelativeLayout>
