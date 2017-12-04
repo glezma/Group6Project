@@ -26,8 +26,7 @@
         app:layout_constraintBottom_toTopOf="@+id/HiText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/HiText"
@@ -53,10 +52,9 @@
 
     <ListView
         android:id="@+id/TransactionsList"
-        android:layout_width="361dp"
-        android:layout_height="202dp"
+        android:layout_width="360dp"
+        android:layout_height="438dp"
         android:listSelector="@android:color/holo_blue_light"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
