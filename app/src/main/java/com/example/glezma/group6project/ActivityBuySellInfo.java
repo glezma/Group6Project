@@ -1,7 +1,11 @@
 package com.example.glezma.group6project;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -137,5 +141,30 @@ public class ActivityBuySellInfo extends Activity implements View.OnClickListene
 
             return view;
         }
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater mainMenuInflater = getMenuInflater();
+        mainMenuInflater.inflate(R.menu.mainmenu, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.menuItemHome){
+            Intent intentHome = new Intent(this, WelcomeScreen.class);
+            this.startActivity(intentHome);
+        } else if (item.getItemId() == R.id.menuItemMyTickets) {
+            Intent intentMyTickets = new Intent(this, AccOverview.class);
+            this.startActivity(intentMyTickets);
+        } else if (item.getItemId() == R.id.menuItemLogOut) {
+            //  Intent intentLogOut = new Intent(this, LogOut.class);
+            // this.startActivity(intentLogOut);
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
