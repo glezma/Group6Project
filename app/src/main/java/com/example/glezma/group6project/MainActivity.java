@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 import static android.content.ContentValues.TAG;
 
 public class MainActivity extends Activity implements View.OnClickListener {
-
+//test
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
