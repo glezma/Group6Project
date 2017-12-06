@@ -91,16 +91,15 @@ public class WelcomeScreen extends Activity implements View.OnClickListener {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menuItemHome){
-         //   Intent intentHome = new Intent(this, WelcomeScreen.class);
-          //  this.startActivity(intentHome);
+            Intent intentHome = new Intent(this, WelcomeScreen.class);
+            this.startActivity(intentHome);
         } else if (item.getItemId() == R.id.menuItemMyTickets) {
-         //   Intent intentMyTickets = new Intent(this, MyTickets.class);
-          //  this.startActivity(intentMyTickets);
+              Intent intentMyTickets = new Intent(this, AccOverview.class);
+              this.startActivity(intentMyTickets);
         } else if (item.getItemId() == R.id.menuItemLogOut) {
-          //  Intent intentLogOut = new Intent(this, LogOut.class);
-           // this.startActivity(intentLogOut);
+            Intent intentLogOut = new Intent(this, MainActivity.class);
+            this.startActivity(intentLogOut);
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
