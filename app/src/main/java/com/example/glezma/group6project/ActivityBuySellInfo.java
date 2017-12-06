@@ -75,7 +75,11 @@ public class ActivityBuySellInfo extends Activity implements View.OnClickListene
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View v) {
+        if (v==buttonBuy) {
+            Intent intentBuy = new Intent(this,Confirmation.class   );
+            this.startActivity(intentBuy);
+        }
 
     }
 

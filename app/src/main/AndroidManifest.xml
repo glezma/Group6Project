@@ -17,8 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".WelcomeScreen" />
-        <activity android:name=".ActivityBuySellInfo"></activity>
-        <activity android:name=".AccOverview"></activity>
+        <activity android:name=".ActivityBuySellInfo" />
+        <activity android:name=".AccOverview" />
+        <activity android:name=".Confirmation"></activity>
     </application>
 
 </manifest>
