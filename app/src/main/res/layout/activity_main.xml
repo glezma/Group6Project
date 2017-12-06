@@ -5,77 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.glezma.group6project.MainActivity">
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewMessage"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="Dummy Activity"
+        android:layout_height="wrap_content"
+        android:text="Enter your name and password to login"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonWelcomeScreen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonWelcomeScreen"
+    <EditText
+        android:id="@+id/editTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Check Welcome Screen"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBullSellInfo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
     <Button
-        android:id="@+id/buttonBullSellInfo"
+        android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check Buy Sell Info"
-        app:layout_constraintBottom_toTopOf="@+id/buttonAccoverview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonWelcomeScreen"
-        app:layout_constraintVertical_bias="0.148" />
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMessage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <Button
-        android:id="@+id/buttonAccoverview"
+        android:id="@+id/buttonRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check Account"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBuyLayout"
+        android:text="Register"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBullSellInfo" />
-
-    <Button
-        android:id="@+id/buttonBuyLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Check Buy Layout "
-        app:layout_constraintBottom_toTopOf="@+id/buttonGameListing"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAccoverview" />
-
-    <Button
-        android:id="@+id/buttonGameListing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Check Game Listing"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBuyLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
 </android.support.constraint.ConstraintLayout>
