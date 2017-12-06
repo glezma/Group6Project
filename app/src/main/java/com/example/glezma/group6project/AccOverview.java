@@ -92,8 +92,8 @@ public class AccOverview extends Activity {
             Intent intentMyTickets = new Intent(this, AccOverview.class);
             this.startActivity(intentMyTickets);
         } else if (item.getItemId() == R.id.menuItemLogOut) {
-            //  Intent intentLogOut = new Intent(this, LogOut.class);
-            // this.startActivity(intentLogOut);
+              Intent intentLogOut = new Intent(this, MainActivity.class);
+             this.startActivity(intentLogOut);
         }
 
         return super.onOptionsItemSelected(item);
