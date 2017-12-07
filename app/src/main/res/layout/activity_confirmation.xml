@@ -5,73 +5,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.glezma.group6project.Confirmation">
+    <TextView
+        android:id="@+id/textViewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:layout_marginLeft="21dp"
+
+        android:layout_margin="20dp"
+
+        android:text="Game: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+    />
     <TextView
         android:id="@+id/textViewConfirmation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextConfirmationNumber"
+        android:layout_below="@+id/textViewGame"
         android:layout_marginTop="21dp"
-        android:layout_toLeftOf="@+id/buttonConfirm"
-        android:layout_toStartOf="@+id/buttonConfirm"
+        android:layout_marginLeft="20dp"
         android:text="I want to buy"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="157dp" />
+ />
 
     <EditText
         android:id="@+id/editTextConfirmationNumber"
         android:layout_width="100dp"
         android:layout_height="39dp"
-        android:layout_alignEnd="@+id/buttonConfirm"
-        android:layout_alignRight="@+id/buttonConfirm"
-        android:layout_below="@+id/textViewPrice"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginTop="127dp"
+
+        android:layout_toRightOf="@+id/textViewConfirmation"
+        android:layout_below="@+id/textViewGame"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="0"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="145dp" />
+/>
 
     <TextView
         android:id="@+id/textViewConfirmation2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonConfirm"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_toLeftOf="@+id/buttonConfirm"
-        android:layout_toStartOf="@+id/buttonConfirm"
+
+        android:layout_below="@+id/textViewConfirmation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
         android:text="tickets at"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="235dp" />
+  />
 
     <TextView
         android:id="@+id/textViewPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="42dp"
-        android:layout_toLeftOf="@+id/textViewConfirmation"
-        android:layout_toStartOf="@+id/textViewConfirmation"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textViewConfirmation"
+        android:layout_toRightOf="@+id/textViewConfirmation2"
         android:text="0"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="235dp" />
+ />
 
     <Button
         android:id="@+id/buttonCancelConfirm"
         android:layout_width="132dp"
         android:layout_height="54dp"
-        android:layout_below="@+id/buttonConfirm"
-        android:layout_marginTop="30dp"
-        android:layout_toEndOf="@+id/textViewPrice"
-        android:layout_toRightOf="@+id/textViewPrice"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/buttonConfirm"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
         android:text="Cancel"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="334dp" />
@@ -80,28 +86,16 @@
         android:id="@+id/buttonConfirm"
         android:layout_width="128dp"
         android:layout_height="55dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/editTextConfirmationNumber"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="104dp"
+
+        android:layout_alignLeft="@+id/textViewConfirmation2"
+        android:layout_alignStart="@+id/textViewConfirmation2"
+        android:layout_below="@+id/textViewConfirmation2"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="100dp"
         android:text="Confirm"
         tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="333dp" />
 
-    <TextView
-        android:id="@+id/textViewGame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewConfirmation"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
-        android:layout_toEndOf="@+id/textViewPrice"
-        android:layout_toRightOf="@+id/textViewPrice"
-        android:text="Game: "
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="52dp" />
+
 </RelativeLayout>

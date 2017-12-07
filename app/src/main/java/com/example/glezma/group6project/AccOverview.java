@@ -86,7 +86,7 @@ public class AccOverview extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menuItemHome){
-            Intent intentHome = new Intent(this, WelcomeScreen.class);
+            Intent intentHome = new Intent(this, WelcomeScreen2.class);
             this.startActivity(intentHome);
         } else if (item.getItemId() == R.id.menuItemMyTickets) {
             Intent intentMyTickets = new Intent(this, AccOverview.class);

@@ -91,18 +91,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
             createAccount(email,password);
         }
 
-//        // 5. Login process
-//        if (editTextName.getText().toString().equals("ross") &&
-//                editTextPassword.getText().toString().equals("to426")) {
-//            textViewMessage.setText("Login Successful");
-//            // 6. Go to activity
-//            Intent intentHomePage = new Intent(this, ActivityHomePage.class);
-//            this.startActivity(intentHomePage);
-//
-//        }
-//        else   {
-//            textViewMessage.setText("Access Denied for" + editTextName.getText());
-//        }
 
     }
 
@@ -137,7 +125,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                                     Toast.LENGTH_SHORT).show();
 
                             // 6. Go to activity
-                            Intent intentHomePage = new Intent(MainActivity.this, WelcomeScreen.class);
+                            Intent intentHomePage = new Intent(MainActivity.this, WelcomeScreen2.class);
                             MainActivity.this.startActivity(intentHomePage);
                         }
                         // If signin fails, display a message to the user. If signin succeeds

@@ -19,7 +19,8 @@
         <activity android:name=".WelcomeScreen" />
         <activity android:name=".ActivityBuySellInfo" />
         <activity android:name=".AccOverview" />
-        <activity android:name=".Confirmation"></activity>
+        <activity android:name=".Confirmation" />
+        <activity android:name=".WelcomeScreen2"></activity>
     </application>
 
 </manifest>
