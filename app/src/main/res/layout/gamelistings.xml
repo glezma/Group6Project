@@ -32,9 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewDate"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="155dp"
         android:layout_marginTop="5dp"
-        android:layout_toRightOf="@+id/textViewGame"
 
         android:text="BUY" />
 

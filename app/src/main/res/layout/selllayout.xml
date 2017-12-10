@@ -4,14 +4,11 @@
 
     <TextView
         android:id="@+id/textViewSellNumber"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="69dp"
-        android:layout_marginRight="69dp"
+        android:layout_marginLeft="26dp"
+
         android:layout_marginTop="38dp"
-        android:layout_toLeftOf="@+id/textViewSellPrice"
-        android:layout_toStartOf="@+id/textViewSellPrice"
         android:text="TextView"
         android:textSize="18sp" />
 
@@ -20,11 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textViewSellNumber"
-        android:layout_alignBottom="@+id/textViewSellNumber"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
+
+
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/textViewSellNumber"
         android:text="TextView"
         android:textSize="18sp" />
 </RelativeLayout>

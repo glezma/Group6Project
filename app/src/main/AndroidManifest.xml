@@ -20,7 +20,8 @@
         <activity android:name=".ActivityBuySellInfo" />
         <activity android:name=".AccOverview" />
         <activity android:name=".Confirmation" />
-        <activity android:name=".WelcomeScreen2"></activity>
+        <activity android:name=".WelcomeScreen2" />
+        <activity android:name=".TransactionConfirmation"></activity>
     </application>
 
 </manifest>
