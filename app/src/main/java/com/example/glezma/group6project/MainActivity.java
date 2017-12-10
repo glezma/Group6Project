@@ -44,7 +44,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         buttonLogin = (Button) findViewById(R.id.buttonLogin);
         buttonRegister = (Button) findViewById(R.id.buttonRegister);
-        textViewMessage = (TextView) findViewById(R.id.textViewMessage);
+        // textViewMessage = (TextView) findViewById(R.id.textViewMessage);
 
         // 4. Activate click on my button
 

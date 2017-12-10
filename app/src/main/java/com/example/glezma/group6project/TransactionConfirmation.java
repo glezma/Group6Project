@@ -37,16 +37,21 @@ public class TransactionConfirmation extends Activity implements View.OnClickLis
         String tiQuantity = extras.getString("quantity");
 //        TradeIntent list_buy = extras.getParcelable("list_buy");
         textViewGame1.setText(tiGame);
-        textViewType1.setText(tiType);
+        String sold = "";
+        if(tiType.equals("buy")){
+            sold = "are selling";
+        } else if(tiType.equals("sell")){
+            sold = "are buying";
+        }
+        textViewType1.setText(sold);
         textViewContactEmail1.setText(tiuser);
-        textViewType1.setText(tiType);
         editTextPrice1.setText(tiPrice);
         editTextQuantity1.setText(tiQuantity);
     }
 
     @Override
     public void onClick(View v) {
-        Intent intentGoBackToList = new Intent(this, ActivityBuySellInfo.class);
+        Intent intentGoBackToList = new Intent(this, WelcomeScreen2.class);
         Bundle extras = getIntent().getExtras();
         String tigame_date = extras.getString("game_date");
         String tiGame = extras.getString("game");
